@@ -22,9 +22,8 @@ setcookie("login", $login, time()+3600);
 setcookie("password", $password, time()+3600);
 }
 
-if(($login == $logS and $password == $passS) or ($logC == $logS and $passC == $passS)){
 echo "Успешно!";
-}
+
 ?>
 </body>
 </html>
