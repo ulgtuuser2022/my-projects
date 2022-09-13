@@ -22,10 +22,10 @@ body{
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-.preloader .done{
+.done{
 	opacity: 0;
 	visibility: hidden;
-}
+}	
 .loader div{
 	position: absolute;
 	border: 10px solid #003cff;
@@ -35,6 +35,7 @@ body{
 }
 .loader div:nth-child(2){
 	animation-delay: -0.5s;
+	overflow: hidden;
 }
 
 @keyframes loader{
