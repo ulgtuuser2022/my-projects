@@ -8,8 +8,8 @@
 <body>
 <?php
 /////////////////////////////////////////
-$logS = 'admin';
-$passS = 'homeworks';
+$logS = "admin";
+$passS = "homeworks";
 $logC = $_COOKIE['login'];
 $passC = $_COOKIE['password'];
 /////////////////////////////////////////
