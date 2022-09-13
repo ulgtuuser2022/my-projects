@@ -2,10 +2,8 @@ body{
 	margin: 0;
 	padding: 0;
 }
-:active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
-}
+
+
 .preloader{
 	position: fixed;
 	left: 0;
@@ -87,4 +85,58 @@ body{
 		height: 256px;
 		opacity: 0;
 	}
+}
+
+
+
+.buttons{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
+@font-face {
+  font-family: "Montserra";
+  font-style: normal;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("Montserra.ttf");
+
+}
+.button{
+	font-weight: 300;
+	color: #222;
+	font: Montserra;
+	font-size: 2vw;
+	position: relative;
+	width: 100%;
+	height: 5vw;
+	background: #fff;
+	border: none;
+	border-bottom: 3px solid #222;
+	margin-bottom: 7px;
+	overflow: hidden;
+}
+.button span{
+	z-index: 2;
+	background: #222;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -110%;
+	transition: 1s left;
+	color: #fff;
+	line-height: 5vw;
+	text-align: right;
+	padding-right: 10%;
+}
+.button:hover span{
+	left: -10%;
+	transition: .7s;
+}
+.button:hover{
+	color: #fff;
 }
