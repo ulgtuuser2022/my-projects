@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 5;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+}
+.loader{
+	position: relative;
+	width: 256px;
+	height: 256px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.preloader .done{
+	opacity: 0;
+	visibility: hidden;
+}
+.loader div{
+	position: absolute;
+	border: 10px solid #003cff;
+	box-shadow: 0 0 5px 10px #003cff;
+	border-radius: 50%;
+	animation: loader 1s ease-out infinite;
+}
+.loader div:nth-child(2){
+	animation-delay: -0.5s;
+}
+
+@keyframes loader{
+	0%{
+		top: 128px;
+		left: 128px;
+		width: 0;
+		height: 0;
+		opacity: 1;
+	}
+	100%{
+		top: 0;
+		left: 0;
+		width: 256px;
+		height: 256px;
+		opacity: 0;
+	}
+}
