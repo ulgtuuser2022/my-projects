@@ -16,7 +16,7 @@ body{
 	z-index: 5;
 	transition: 1s all;
 	opacity: 1;
-	visibility: hidden;
+	visibility: visible;
 }
 .loader{
 	position: relative;
