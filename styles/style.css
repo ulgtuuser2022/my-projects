@@ -90,6 +90,7 @@ body{
 
 
 .buttons{
+	font-family: Montserra;
 	position: absolute;
 	width: 50%;
 	height: 50%;
@@ -99,16 +100,22 @@ body{
 
 }
 @font-face {
-  font-family: "Montserra";
+  font-family: "Montserratlight";
   font-style: normal;
   /* Браузер сначала попробует найти шрифт локально */
-  src: url("Montserra.ttf");
+  src: url("Montserrat-light.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("Montserrat-Regular.ttf");
 
 }
 .button{
 	font-weight: 300;
 	color: #222;
-	font: Montserra;
+	font-family: Montserratlight;
 	font-size: 2vw;
 	position: relative;
 	width: 100%;
@@ -139,4 +146,152 @@ body{
 }
 .button:hover{
 	color: #fff;
+}
+#preza{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.block-ec{
+	overflow: hidden;
+	z-index: 3;
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	top: 0;
+	height: 0;
+}
+#preza .back{
+	color: #fff;
+	overflow: hidden;
+	z-index: 2;
+	
+}
+#preza .frback{
+	background: url("https://www.ixbt.com/img/n1/news/2022/1/5/tesla-model-x-p100d-97_large.jpg") no-repeat center center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover;
+}
+#preza .twback{
+	background: url("https://kartinkin.net/uploads/posts/2022-02/thumbs/1645935808_66-kartinkin-net-p-ekologicheskie-kartinki-73.jpg") no-repeat center center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover;
+}
+#preza .thrback{
+	background: url("https://auto.today/media/res/6/7/2/5/5/67255.pvwwsc.1280.jpg") no-repeat center center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover;
+}
+#preza .frrback{
+	background: url("https://s0.rbk.ru/v6_top_pics/resized/1440xH/media/img/5/33/755560021370335.jpg") no-repeat center center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover;
+}
+#preza .fiveback{
+	background: url("https://kolesa-uploads.ru/-/e096b1a2-1aad-4f10-ba43-b3505848e054/0-1.jpg") no-repeat center center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover;
+}
+#preza .sixback{
+	background: url("https://img.gazeta.ru/files3/442/13414442/meme-pic905-895x505-54577.jpg") no-repeat center center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover;
+}
+#preza .sevback{
+	background: url("http://rutesla.com/wp-content/uploads/2014/07/Tesla_Motors_Model_S_base.jpg") no-repeat center center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover;
+}
+#preza .thxblock{
+	background: url("https://cf2.ppt-online.org/files2/slide/k/KT87oRzH0I5iDBEmPrgNLFthSC3GwcZsuJyAqa/slide-19.jpg") no-repeat center center;
+	-moz-background-size: 80%; /* Firefox 3.6+ */
+    -webkit-background-size: 80%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 80%; /* Opera 9.6+ */
+    background-size: 80%;
+}
+#preza .back:after{
+	content: "";
+	position: absolute;
+	z-index: 2;
+	background: rgba(0,0,0, 0.5);
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+#preza p{
+	text-align: center;
+	font-family: Montserrat;
+	transform: translateY(20%);
+}
+#preza h1 p{
+	font-size: 5vw;
+	width: 90%;
+		margin-left: auto;
+	margin-right: auto;
+}
+#preza h2 p{
+	font-family: Montserratlight;
+	font-size: 3vw;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.block-ec .twslide{
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 100vh;
+	color: #111;
+}
+
+.block-ec .plus{
+	color: #111;
+}
+.block-ec .minus{
+	color: #111;
+}
+.block-ec .mainblock{
+	width: 70%;
+	height: 50%;
+	margin-top: 30%;
+	margin-left: 15%;
+}
+.block-ec .miniblocks{
+	position: relative;
+	width: 50%;
+	height: 40%;
+	float: left;
+	color: #111;
+	margin-top: 10px;
+	text-align: center;
+	font-family: Montserratlight;
+	font-size: 2vw;
+	transition: 1s;
+}
+.block-ec .miniblocks + .third{
+	transform: translatex(50%);
+}
+.block-ec .miniblocks:hover{
+	background: #333;
+	color: #fff;
+	transition: 1s;
 }
